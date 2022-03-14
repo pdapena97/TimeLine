@@ -1,0 +1,49 @@
+
+
+/* hacer un JSON array de objetos,hago unos cuantos, desordenados.  SOLUCIONADO,
+/ La aplicacion debe procesar estos eventos y ordenarlos cronológicamente. NO DEBERIA SER DIFICIL
+/ DOM -> ir añadiendo al HTML estos eventos y representar visualmente año, titulo, imagen y texto.  SOLUCIONADO
+/ Página Responsive, pensando en móvil primero. Puede ser horizontal o vertical (ojo insta).  CSS a saco
+OPCIONAL: que el usuario pueda añadir su evento. Esto en teoria es el ToDoList
+*/
+
+
+/*
+const unorderedEvents = [
+    {
+        year:
+        title: 
+        img:
+        text:
+    },
+    {
+        year:
+        title:
+        img:
+        text:
+    },
+    {
+        year:
+        title:
+        img:
+        text:
+    },
+]
+
+unorderedEvents.sort(function(a,b) => {
+    let dateA = new Date(a.year) 
+    let dateB = new Date(b.year);
+    return dateA - dateB;
+    //return new Date(a.year) - new Date(b.year);
+})
+*/
+// ORDENO EL ARRAY DE OBJETOS Y DEBERÍA DEVOLVER ESE ARRAY PERO ORDENADO  [
+
+
+
+    A VER SI ENTIENDO BIEN
+    VIDEO DE BERTO + POKEMON CARDS
+    creo que puedo hacer el fetch del JSON y despues simplemente Berto. Necesito innerHTML y document.createElement
+    hacer la mierda del pavo de pokemon o el del StackOverflow
+    luego solo quedaria ordenar el bicho antes, CSS
+    y la mierda opcional.
