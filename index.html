@@ -9,6 +9,18 @@
   </head>
   <body>
     <section class="intro">
+      <form name="formulario">
+        <p>Introduce tu propio evento:</p>
+        <label for="añoevento">año:</label>
+        <input type="number" name="añoevento" id="year" required />
+        <label for="tituloevento">titulo:</label>
+        <input type="text" name="tituloevento" id="title" required />
+        <label for="imagenevento">imagen:</label>
+        <input type="file" name="imagenevento" id="image" />
+        <label for="textoevento">texto:</label>
+        <input type="texto" name="textoevento" id="text" required />
+        <button type="submit">Enviar</button>
+      </form>
       <div class="container">
         <h1>TIMELINE &darr;</h1>
       </div>
@@ -18,7 +30,7 @@
       <ol id="lineatemporal"></ol>
     </section>
 
-    <footer class="page-footer">pablo dapena..</footer>
+    <footer class="page-footer">Proyecto de Pablo y Hugo</footer>
     <script type="module" src="js/fetch.js"></script>
   </body>
 </html>

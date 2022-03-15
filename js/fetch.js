@@ -2,29 +2,32 @@
 // query selector para generar contenedores dinamicamente
 const eventList = document.querySelector("#lineatemporal");
 
-
+// Almaceno los datos del USER
+const dataUser = Array.from(document.querySelectorAll('#formulario input')).reduce((acc, input) => ({...acc,[input.id]: input.value}),{});
 
 // funcion para generar eventos y añadirlos dinamicamente al html
 const generateEvents = (data) => {
     //ordeno los eventos cronológicamente
+    data.eventos.push(dataUser);
     data.eventos.sort((a, b) => a.year - b.year);
+    
 
-    data.eventos.forEach((event) => {
-      // creo un section en el que guardo cada event
+    data.eventos.forEach((suceso) => {
+      // creo un section en el que guardo cada suceso
       const newEventList = document.createElement('li');
       // añado  clases
       // en teoría esto no es necesario...?
       // o sí, tengo que mirar, porque va añadiendo linea por linea
       newEventList.classList.add("orderedlist");
-      // creo tags HTML para cada event
+      // creo tags HTML para cada suceso
       //aquí puedo hacer poner exactamente como quiera mi estructura html
       //muy util para mirar CSS por ahi que suelen ir con divs
       const eventoHTML = `
           <div>
-            <time> ${event.year} : ${event.title} 
-            <img src=${event.image} alt="image" height="150" width="150" />
-            ${event.text} </time>
-          </div>
+              <time> ${suceso.year} : ${suceso.title} </time>
+              <img src=${suceso.image} alt="image" height="150" width="150" />
+              <p>${suceso.text}<p> 
+             </div>
         </li>
       `;
       //los añado al HTML
@@ -45,37 +48,48 @@ fetch("data/data.json")
 .then(data => generateEvents(data))
 
 
- 
 
-(function () {
-  
 
-  // define variables
-  let items = document.querySelectorAll(".timeline li");
 
-  // check if an element is in viewport
-  // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
-  function isElementInViewport(el) {
-    let rect = el.getBoundingClientRect();
-    return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <=
-        (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-  }
+/*
+//ALMACENO LOS DATOS DEL USER
+//const dataUser = Array.from(document.querySelectorAll('#formulario input')).reduce((acc, input) => ({...acc,[input.id]: input.value}),{});
 
-  function callbackFunc() {
-    for (let i = 0; i < items.length; i++) {
-      if (isElementInViewport(items[i])) {
-        items[i].classList.add("in-view");
-      }
-    }
-  }
+const manejadoraFormSubmit = (event) => {
+  event.preventDefault();
 
-  // listen for events
-  window.addEventListener("load", callbackFunc);
-  window.addEventListener("resize", callbackFunc);
-  window.addEventListener("scroll", callbackFunc);
-})();
+  const generateEvents = (data) => {
+    //ordeno los eventos cronológicamente
+    data.eventos.push(dataUser);
+    data.eventos.sort((a, b) => a.year - b.year);
+    
+
+    data.eventos.forEach((suceso) => {
+      // creo un section en el que guardo cada suceso
+      const newEventList = document.createElement('li');
+      // añado  clases
+      // en teoría esto no es necesario...?
+      // o sí, tengo que mirar, porque va añadiendo linea por linea
+      newEventList.classList.add("orderedlist");
+      // creo tags HTML para cada suceso
+      //aquí puedo hacer poner exactamente como quiera mi estructura html
+      //muy util para mirar CSS por ahi que suelen ir con divs
+      const eventoHTML = `
+          <div>
+              <time> ${suceso.year} : ${suceso.title} </time>
+              <img src=${suceso.image} alt="image" height="150" width="150" />
+              <p>${suceso.text}<p> 
+             </div>
+        </li>
+      `;
+      //los añado al HTML
+      newEventList.innerHTML = eventoHTML;
+      eventList.appendChild(newEventList);
+  });
+};
+
+}
+
+form.addEventListener("submit", manejadoraFormSubmit);
+
+*/
