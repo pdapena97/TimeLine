@@ -5,3 +5,5 @@
 / DOM -> ir añadiendo al HTML estos eventos y representar visualmente año, titulo, imagen y texto. HECHO
 / Página Responsive, pensando en móvil primero. Puede ser horizontal o vertical (ojo insta).  CSS A SACO
 OPCIONAL: que el usuario pueda añadir su evento. FALTA PREVENIR EL DEFAULT
+
+

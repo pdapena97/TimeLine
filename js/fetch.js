@@ -51,7 +51,7 @@ fetch("data/data.json")
 
 
 
-/*
+
 //ALMACENO LOS DATOS DEL USER
 //const dataUser = Array.from(document.querySelectorAll('#formulario input')).reduce((acc, input) => ({...acc,[input.id]: input.value}),{});
 
@@ -77,7 +77,7 @@ const manejadoraFormSubmit = (event) => {
       const eventoHTML = `
           <div>
               <time> ${suceso.year} : ${suceso.title} </time>
-              <img src=${suceso.image} alt="image" height="150" width="150" />
+              <img src=${suceso.image} alt="image" height="250" width="250" />
               <p>${suceso.text}<p> 
              </div>
         </li>
@@ -90,6 +90,9 @@ const manejadoraFormSubmit = (event) => {
 
 }
 
-form.addEventListener("submit", manejadoraFormSubmit);
 
-*/
+fetch("data/data.json")
+.then(response => response.json())
+.then(data => generateEvents(data))
+
+form.addEventListener("submit", manejadoraFormSubmit);
