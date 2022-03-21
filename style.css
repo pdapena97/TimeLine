@@ -21,28 +21,16 @@ body {
 
 .intro {
   background: black;
-  padding: 40px 10;
+  padding: 40px 10px;
   display: block;
   animation-duration: 3s;
   animation-name: slidein;
   overflow: hidden;
 }
 
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-
 .container {
   width: 100%;
-  max-width: 800px;
+  max-width: 1400px;
   margin: 0 auto;
   margin-top: 10px;
   overflow: hidden;
@@ -85,7 +73,7 @@ form {
 
 .form-label {
   position: absolute;
-  color: #bebebe;
+  color: orange;
   left: 10px;
   transition: 0.25s ease;
   -webkit-transition: 0.25s ease;
@@ -137,7 +125,7 @@ select {
   border: none;
   padding-top: 5px;
   text-decoration: underline;
-  text-underline-position: below;
+
   color: #bebebe;
   width: 156px;
 }
@@ -145,10 +133,8 @@ select {
 .custom-input-file .input-file {
   position: relative;
   outline: 0 none;
-  content-visibility: hidden;
   cursor: pointer;
-  text-decoration: underline;
-  text-underline-position: below;
+  content-visibility: hidden;
 }
 
 #image .input-file {
@@ -158,12 +144,13 @@ select {
 button.submit {
   width: auto;
   background: #000000;
-  color: #fff;
+  color: cyan;
   padding: 10px 5px;
   font-weight: bold;
-  border-radius: 10%;
+  border-radius: 10px;
   border-color: rgba(255, 255, 255, 0.267);
   margin-bottom: 12px;
+  cursor: pointer;
 }
 
 /* ESTILO DE LA TIMELINE
@@ -234,17 +221,40 @@ h2 {
 
 .timeline ol li:nth-child(even) div::before {
   right: -15px;
-  border-width: 8px 0 8px 16px;
+  border-width: 8px 16px 8px 0px;
   border-color: transparent #ffffff transparent transparent;
 }
 
 p {
-  font-size: 0.8rem;
+  font-size: 1rem;
   padding-top: 10px;
 }
 
 /* MEDIA QUERIES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media screen and (min-width: 1600px) {
+  .timeline ol li div {
+    width: 750px;
+  }
+  .timeline ol li:nth-child(even) div {
+    left: -779px;
+    /*250+45-6*/
+  }
+  .timeline ol li:nth-child(even) div::before {
+    right: -5px;
+  }
+
+  time {
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 8px;
+    font-weight: 100;
+  }
+  li > div {
+    display: grid;
+    grid-template-rows: max-content;
+  }
+}
 
 @media screen and (max-width: 900px) {
   .timeline ol li div {
@@ -257,6 +267,15 @@ p {
   li > div {
     display: grid;
     grid-template-rows: max-content;
+  }
+  time {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    font-weight: 100;
+  }
+  p {
+    font-size: 0.8rem;
   }
 }
 
@@ -273,6 +292,26 @@ p {
   .timeline ol li:nth-child(even) div::before {
     left: -15px;
     border-width: 8px 16px 8px 0;
+  }
+  time {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    font-weight: 100;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
   }
 }
 
@@ -305,8 +344,6 @@ img {
 }
 
 time {
-  display: block;
-  font-size: 1rem;
   margin-bottom: 8px;
-  font-weight: 100;
+  font-size: 1.5rem;
 }

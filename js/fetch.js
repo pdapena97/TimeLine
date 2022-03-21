@@ -47,11 +47,8 @@ fetch("data/data.json")
 
 
 
+
 /*
-ERROR CON EL DEFAULT CREO. NO LE LLEGAN LOS DATOS DEL USER
-UNDEFINED O NULL, PORQUE LA APLICACIÓN SI CREA LA CARTA DEL USER
-
-
 //ALMACENO LOS DATOS DEL USER
 //const dataUser = Array.from(document.querySelectorAll('#formulario input')).reduce((acc, input) => ({...acc,[input.id]: input.value}),{});
 
