@@ -16,17 +16,14 @@ const generateEvents = (data) => {
       // creo un section en el que guardo cada suceso
       const newEventList = document.createElement('li');
       // añado  clases
-      // en teoría esto no es necesario...?
-      // o sí, tengo que mirar, porque va añadiendo linea por linea
+      
       newEventList.classList.add("orderedlist");
       // creo tags HTML para cada suceso
-      //aquí puedo hacer poner exactamente como quiera mi estructura html
-      //muy util para mirar CSS por ahi que suelen ir con divs
       const eventoHTML = `
           <div>
               <time> ${suceso.year} : ${suceso.title} </time>
               <img src=${suceso.image} alt="image" height="150" width="150" />
-              <p>${suceso.text}<p> 
+              <p>${suceso.text}</p> 
              </div>
         </li>
       `;
@@ -50,6 +47,9 @@ fetch("data/data.json")
 
 
 
+/*
+ERROR CON EL DEFAULT CREO. NO LE LLEGAN LOS DATOS DEL USER
+UNDEFINED O NULL, PORQUE LA APLICACIÓN SI CREA LA CARTA DEL USER
 
 
 //ALMACENO LOS DATOS DEL USER
@@ -96,3 +96,4 @@ fetch("data/data.json")
 .then(data => generateEvents(data))
 
 form.addEventListener("submit", manejadoraFormSubmit);
+*/
