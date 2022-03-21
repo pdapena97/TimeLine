@@ -246,13 +246,66 @@ p {
 
   time {
     display: block;
-    font-size: 2rem;
+    font-size: 1.6rem !important;
     margin-bottom: 8px;
     font-weight: 100;
   }
   li > div {
     display: grid;
     grid-template-rows: max-content;
+  }
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 300% !important;
+    opacity: 0.18 !important;
+    overflow: auto !important;
+    padding-bottom: 20px !important;
+  }
+  p {
+    color: rgb(255, 255, 255) !important;
+    font-size: 1.1rem;
+    padding: 25px;
+    text-align: center !important;
+    font-weight: bolder !important;
+  }
+}
+
+@media screen and (min-width: 1150px) and (max-width: 1599px) {
+  .timeline ol li div {
+    width: 550px !important;
+  }
+  .timeline ol li:nth-child(even) div {
+    left: -579px !important;
+  }
+  .timeline ol li:nth-child(even) div::before {
+    right: -5px;
+  }
+
+  time {
+    display: block;
+    font-size: 1.6rem !important;
+    margin-bottom: 8px;
+    font-weight: 100;
+  }
+  li > div {
+    display: grid;
+    grid-template-rows: max-content;
+  }
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 300% !important;
+    opacity: 0.18 !important;
+    overflow: auto !important;
+    padding-bottom: 20px !important;
+  }
+  p {
+    color: rgb(255, 255, 255) !important;
+    font-size: 1.1rem;
+    padding: 25px;
+    text-align: center !important;
+    font-weight: bolder !important;
   }
 }
 
@@ -262,7 +315,6 @@ p {
   }
   .timeline ol li:nth-child(even) div {
     left: -289px;
-    /*250+45-6*/
   }
   li > div {
     display: grid;
@@ -276,6 +328,11 @@ p {
   }
   p {
     font-size: 0.8rem;
+  }
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -295,12 +352,17 @@ p {
   }
   time {
     display: block;
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin-bottom: 8px;
     font-weight: 100;
   }
   p {
     font-size: 0.8rem;
+  }
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
   }
   @keyframes slidein {
     from {
@@ -315,7 +377,7 @@ p {
   }
 }
 
-/* ESTILOS DEL FOOTER
+/* ESTILO DEL FOOTER
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .page-footer {
   position: fixed;
@@ -336,14 +398,12 @@ li > div {
   display: grid;
   grid-template-rows: max-content 200px 1fr;
 }
-
 img {
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
-
 time {
   margin-bottom: 8px;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
