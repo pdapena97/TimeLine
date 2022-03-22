@@ -1,26 +1,19 @@
 "use strict"
 
-const datos = [];
-
-
-// query selector para generar contenedores dinamicamente
+let datos = [];
 const eventList = document.querySelector("#lineatemporal");
-const form = document.querySelector("form")
+const form = document.querySelector("form");
 
 
-// funcion para generar eventos y añadirlos dinamicamente al html
+// Función para generar eventos y añadirlos dinámicamente al HTML
 const generateEvents = (data) => {
-    //ordeno los eventos cronológicamente
-   // data.eventos.push(dataUser);
-    data.eventos.sort((a, b) => a.year - b.year);
-    
-
-    data.eventos.forEach((suceso) => {
-      // creo una lista en el que guardo cada suceso
+    data.sort((a, b) => a.year - b.year);
+    data.forEach((suceso) => {
+      
       const newEventList = document.createElement('li');
-      // añado clases para CSS
+    
       newEventList.classList.add("orderedlist");
-      // creo tags HTML para cada suceso
+      
       const eventoHTML = `
           <div>
               <time> ${suceso.year} : ${suceso.title} </time>
@@ -29,7 +22,7 @@ const generateEvents = (data) => {
              </div>
         </li>
       `;
-      //los añado al HTML
+     
       newEventList.innerHTML = eventoHTML;
       eventList.appendChild(newEventList);
   });
@@ -37,41 +30,46 @@ const generateEvents = (data) => {
 
 
 
-// fetch de nuestros datos
-async function  main(){
-  const resp = await fetch("data/data.json")
-  const datos =  await resp.json()
+// Fetch de nuestros datos
+async function main(){
+  try {
+    const response = await fetch("data/data.json")
+
+    if (response.ok) {
+      const datos =  await response.json()
+      generateEvents(datos);
+
+    } else {
+      console.log("Hubo un error en la petición");
+    }
   
-  generateEvents(datos);
-
+  } catch (error) {
+    console.log(error.message);
+  }
 }
-
 main()
 
 
-// TENGO QUE AÑADIR TRY CATCH
 
 
 
-//const dataUser = Array.from(document.querySelectorAll('#formulario input')).reduce((acc, input) => ({...acc,[input.id]: input.value}),{});
+// Función para añadir datos del usuario   
+const manejadoraFormSubmit = (ev) => {
+  ev.preventDefault();
 
-const manejadoraFormSubmit = (event) => {
-  event.preventDefault();
-  // leer los datos del formulario
+  const userYear = document.getElementById('year').value;
+  const userTitle = document.getElementById('title').value;
+  const userImage = document.getElementById('image').value;
+  const userText = document.getElementById('text').value;
+
   const dataUser = {
-    year: document.getElementById("year").value,
-    title: document.getElementById("title").value,
-    image: document.getElementById("image").value,
-    text: document.getElementById("text").value
-  }
-  // crear el objeto
-  
-  // añadirlo a array datos
-  datos.eventos.push(dataUser);
-  
-  // llamar 
+    year: parseInt(userYear),
+    title: userTitle,
+    image: userImage,
+    text: userText
+  };
+  datos.push(dataUser); 
   generateEvents(datos);
-  
 }
 
 form.addEventListener("submit", manejadoraFormSubmit);

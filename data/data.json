@@ -1,79 +1,78 @@
-{
-    "eventos": [
-        {
-            "year": 1492,
-            "title": "Descubrimiento de América",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Desembarco_de_Col%C3%B3n_de_Di%C3%B3scoro_Puebla.jpg",
-            "text": "Cristóbal Colón completó su viaje a través del Océano Atlántico y llegó al “Nuevo Mundo”. A donde Colón realmente llegó ese día de octubre fue a una isla que llamó San Salvador, que ahora es parte de las Bahamas."
+[
+    {
+        "year": 1492,
+        "title": "Descubrimiento de América",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Desembarco_de_Col%C3%B3n_de_Di%C3%B3scoro_Puebla.jpg",
+        "text": "Cristóbal Colón completó su viaje a través del Océano Atlántico y llegó al “Nuevo Mundo”. A donde Colón realmente llegó ese día de octubre fue a una isla que llamó San Salvador, que ahora es parte de las Bahamas."
             
-        },
-        {
-            "year": 1914,
-            "title": "Primera Guerra Mundial",
-            "image": "https://www.biografiasyvidas.com/historia/fotos/soldados.jpg",
-            "text": "Confrontación bélica centrada en Europa que empezó el 28 de julio de 1914 y finalizó el 11 de noviembre de 1918, cuando Alemania aceptó las condiciones del armisticio."
+    },
+    {
+        "year": 1914,
+        "title": "Primera Guerra Mundial",
+        "image": "https://www.biografiasyvidas.com/historia/fotos/soldados.jpg",
+        "text": "Confrontación bélica centrada en Europa que empezó el 28 de julio de 1914 y finalizó el 11 de noviembre de 1918, cuando Alemania aceptó las condiciones del armisticio."
 
-        },
-        {
-            "year": 1935,
-            "title": "Revolución francesa",
-            "image": "https://economipedia.com/wp-content/uploads/Revolucion-francesa.jpg",
-            "text": "Según la historiografía clásica, este periodo marca el inicio de la Edad Contemporánea al sentar las bases de la democracia moderna, lo que la sitúa en el corazón del siglo XIX. Abrió nuevos horizontes políticos basados en el principio de la soberanía popular, que será el motor de las revoluciones de 1830."
+    },
+    {
+        "year": 1935,
+        "title": "Revolución Francesa",
+        "image": "https://economipedia.com/wp-content/uploads/Revolucion-francesa.jpg",
+        "text": "Según la historiografía clásica, este periodo marca el inicio de la Edad Contemporánea al sentar las bases de la democracia moderna, lo que la sitúa en el corazón del siglo XIX. Abrió nuevos horizontes políticos basados en el principio de la soberanía popular, que será el motor de las revoluciones de 1830."
 
-        },
-        {
-            "year": 1893,
-            "title": "Voto para la Mujer",
-            "image": "https://jacobinlat.com/wp-content/uploads/2020/11/2018110300365231216.jpg",
-            "text": "En 1893 se aprobó en Nueva Zelanda el primer sufragio femenino sin restricciones, gracias al movimiento liderado por Kate Sheppard. De todos modos a las mujeres solo se les permitía votar pero no presentarse a elecciones."
+    },
+    {
+        "year": 1893,
+        "title": "Voto para la Mujer",
+        "image": "https://jacobinlat.com/wp-content/uploads/2020/11/2018110300365231216.jpg",
+        "text": "En 1893 se aprobó en Nueva Zelanda el primer sufragio femenino sin restricciones, gracias al movimiento liderado por Kate Sheppard. De todos modos a las mujeres solo se les permitía votar pero no presentarse a elecciones."
 
-        },
-        {
-            "year": 1440,
-            "title": "Creación de la imprenta",
-            "image": "https://ichef.bbci.co.uk/news/640/cpsprodpb/E916/production/_95107695_gutenberg.jpg",
-            "text": "La invención de la imprenta se atribuye al alemán, Johannes Gutenberg en el año 1440. Gutenberg es considerado como “el padre de la imprenta”, tras años intentando disputarse el título entre franceses, italianos, holandeses y alemanes."         
+    },
+    {
+        "year": 1440,
+        "title": "Creación de la Imprenta",
+        "image": "https://ichef.bbci.co.uk/news/640/cpsprodpb/E916/production/_95107695_gutenberg.jpg",
+        "text": "La invención de la imprenta se atribuye al alemán, Johannes Gutenberg en el año 1440. Gutenberg es considerado como “el padre de la imprenta”, tras años intentando disputarse el título entre franceses, italianos, holandeses y alemanes."         
 
-        },
-        {
-            "year": 476,
-            "title": "Caída del Imperio Romano",
-            "image": "https://www.ecestaticos.com/imagestatic/clipping/4e5/87f/4e587fb1b6d9656b271cce5019d93ac1/por-que-cayo-el-imperio-romano-una-respuesta-inesperada-y-fascinante.jpg?mtime=1622661503",
-            "text": "Odoacro, rey de los hérulos, derrota al último emperador de Roma, Rómulo Augústulo, el 4 de septiembre de 476. Este hecho marca el fin del Imperio Romano: desaparece el imperio occidental mientras que el imperio oriental bizantino sobrevive hasta la caída de Constantinopla, en 1453."        
+    },
+    {
+        "year": 476,
+        "title": "Caída del Imperio Romano",
+        "image": "https://www.ecestaticos.com/imagestatic/clipping/4e5/87f/4e587fb1b6d9656b271cce5019d93ac1/por-que-cayo-el-imperio-romano-una-respuesta-inesperada-y-fascinante.jpg?mtime=1622661503",
+        "text": "Odoacro, rey de los hérulos, derrota al último emperador de Roma, Rómulo Augústulo, el 4 de septiembre de 476. Este hecho marca el fin del Imperio Romano: desaparece el imperio occidental mientras que el imperio oriental bizantino sobrevive hasta la caída de Constantinopla, en 1453."        
 
-        },
-        {
-            "year": 2008,
-            "title": "Crisis Económica",
-            "image": "https://www.cronista.com/files/image/153/153523/5ff7baace9cb9.jpg",
-            "text": "Se desató de manera directa debido al colapso de la burbuja inmobiliaria en los Estados Unidos en el año 2006, que provocó aproximadamente en octubre de 2007 la llamada crisis de las hipotecas subprime."
+    },
+    {
+        "year": 2008,
+        "title": "Crisis Económica",
+        "image": "https://www.cronista.com/files/image/153/153523/5ff7baace9cb9.jpg",
+        "text": "Se desató de manera directa debido al colapso de la burbuja inmobiliaria en los Estados Unidos en el año 2006, que provocó aproximadamente en octubre de 2007 la llamada crisis de las hipotecas subprime."
 
-        },
-        {
-            "year": 1882,
-            "title": "Primer Avión",
-            "image": "https://static2.larioja.com/www/multimedia/201908/31/media/cortadas/47900723--624x303.jpg",
-            "text": "El avión Mozhaiski fue un aparato experimental diseñado y construido por Aleksandr Mozhaiski, con dos motores de vapor, y se afirma que fue el primero en despegar del suelo entre 1883 y 1885."
+    },
+    {
+        "year": 1882,
+        "title": "Primer Avión",
+        "image": "https://static2.larioja.com/www/multimedia/201908/31/media/cortadas/47900723--624x303.jpg",
+        "text": "El avión Mozhaiski fue un aparato experimental diseñado y construido por Aleksandr Mozhaiski, con dos motores de vapor, y se afirma que fue el primero en despegar del suelo entre 1883 y 1885."
 
-        },
-        {
-            "year": 1969,
-            "title": "Llegada a la Luna",
-            "image": "https://d500.epimg.net/cincodias/imagenes/2019/07/16/lifestyle/1563285600_651977_1563285773_rrss_normal.jpg",
-            "text": "la misión norteamericana Apolo 11, colocó a los primeros hombres en la Luna: el comandante Neil Armstrong y el piloto Edwin F. Aldrin. Cuando el módulo Eagle alunizó en el Mar de la Tranquilidad las imágenes en vivo se siguieron en televisión por unas 600 millones de personas."         
+    },
+    {
+        "year": 1969,
+        "title": "Llegada a la Luna",
+        "image": "https://d500.epimg.net/cincodias/imagenes/2019/07/16/lifestyle/1563285600_651977_1563285773_rrss_normal.jpg",
+        "text": "la misión norteamericana Apolo 11, colocó a los primeros hombres en la Luna: el comandante Neil Armstrong y el piloto Edwin F. Aldrin. Cuando el módulo Eagle alunizó en el Mar de la Tranquilidad las imágenes en vivo se siguieron en televisión por unas 600 millones de personas."         
 
-        },
-        {
-            "year": 1660,
-            "title": "Revolución Industrial",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/BASF_Werk_Ludwigshafen_1881.JPG/640px-BASF_Werk_Ludwigshafen_1881.JPG",
-            "text": "La Revolución Industrial fue un proceso de profundas transformaciones económicas, sociales, culturales y tecnológicas que se desarrolló entre 1760 y 1840, y tuvo su origen en Inglaterra."
-        },
-        {
-            "year": 1989,
-            "title": "Caída del Muro de Berlín",
-            "image": "https://fotografias.antena3.com/clipping/cmsimages02/2011/08/13/154CBA30-31CC-4834-A757-CCF9832ADFFD/58.jpg",
-            "text": "Fue todo un símbolo de la Guerra Fría, que con su caída en la noche del 9 de noviembre de 1989 dio el pistoletazo de salida a una nueva era en la que la URSS tenía los días contados (se disolvió dos años más tarde). Fue un obstáculo construido por la Alemania comunista en 1961 para impedir a sus ciudadanos el libre tránsito hacia el mundo occidental."
-        }
-    ]
-}
+    },
+    {
+        "year": 1660,
+        "title": "Revolución Industrial",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/BASF_Werk_Ludwigshafen_1881.JPG/640px-BASF_Werk_Ludwigshafen_1881.JPG",
+        "text": "La Revolución Industrial fue un proceso de profundas transformaciones económicas, sociales, culturales y tecnológicas que se desarrolló entre 1760 y 1840, y tuvo su origen en Inglaterra."
+    },
+    {
+        "year": 1989,
+        "title": "Caída del Muro de Berlín",
+        "image": "https://fotografias.antena3.com/clipping/cmsimages02/2011/08/13/154CBA30-31CC-4834-A757-CCF9832ADFFD/58.jpg",
+        "text": "Fue todo un símbolo de la Guerra Fría, que con su caída en la noche del 9 de noviembre de 1989 dio el pistoletazo de salida a una nueva era en la que la URSS tenía los días contados (se disolvió dos años más tarde). Fue un obstáculo construido por la Alemania comunista en 1961 para impedir a sus ciudadanos el libre tránsito hacia el mundo occidental."
+    }
+    
+]

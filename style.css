@@ -118,29 +118,6 @@ select {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.custom-input-file {
-  width: auto;
-  border-bottom: 1px solid #999;
-  color: #fff;
-  border: none;
-  padding-top: 5px;
-  text-decoration: underline;
-
-  color: #bebebe;
-  width: 156px;
-}
-
-.custom-input-file .input-file {
-  position: relative;
-  outline: 0 none;
-  cursor: pointer;
-  content-visibility: hidden;
-}
-
-#image .input-file {
-  border: 1px;
-}
-
 button.submit {
   width: auto;
   background: #000000;
