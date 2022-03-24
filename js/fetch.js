@@ -8,7 +8,6 @@ const form = document.querySelector("form");
 // Función para generar eventos y añadirlos dinámicamente al HTML
 const generateEvents = (data) => {
 
-    datos = [];
     data.sort((a, b) => a.year - b.year);
     data.forEach((suceso) => {
       
